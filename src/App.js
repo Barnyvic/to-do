@@ -12,16 +12,16 @@ function App() {
     setTask([...Task, { name: name, done: false }]);
   };
 
-  //  useeffect for storing tasks in localStorage
-  useEffect(() => {
-    if (Task.length === 0) return;
-    localStorage.setItem("tasks", JSON.stringify(Task));
-  }, [Task]);
+  // //  useeffect for storing tasks in localStorage
+  // useEffect(() => {
+  //   if (Task.length === 0) return;
+  //   localStorage.setItem("tasks", JSON.stringify(Task));
+  // }, [Task]);
 
-  useEffect(() => {
-    const taskItems = JSON.parse(localStorage.getItem("tasks"));
-    setTask(taskItems);
-  }, []);
+  // useEffect(() => {
+  //   const taskItems = JSON.parse(localStorage.getItem("tasks"));
+  //   setTask(taskItems);
+  // }, []);
 
   // function to delete the tasks
   function removeTask(taskIndex) {
