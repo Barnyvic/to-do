@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { MdAdd } from "react-icons/md";
 
-function Task({ onAdd }) {
+function Tasks({ onAdd }) {
   const [taskName, setTaskName] = useState("");
 
   const handleSubmit = (e) => {
@@ -26,4 +26,4 @@ function Task({ onAdd }) {
   );
 }
 
-export default Task;
+export default Tasks;
